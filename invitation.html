@@ -1,0 +1,2310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>Lakshan &amp; Dilhani — Homecoming Celebration</title>
+
+<!-- WhatsApp / Social Media Open Graph Tags -->
+<meta property="og:title" content="Lakshan &amp; Dilhani — Homecoming Celebration">
+<meta property="og:description" content="Warmly request the pleasure of your presence to celebrate our Homecoming on 18th September 2026.">
+<meta property="og:image" content="photos/couple-hero.jpg">
+<meta property="og:url" content="https://dilhani-wedding.vercel.app">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#4A121A">
+
+<!-- Preload Hero Image for instant mobile display -->
+<link rel="preload" as="image" href="photos/couple-hero.jpg">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --maroon:       #4A121A;
+    --maroon-deep:  #2F0910;
+    --maroon-light: #6A1D27;
+    --maroon-hover: #7E1E2C;
+    --gold:         #C99738;
+    --gold-light:   #E7C97E;
+    --gold-soft:    rgba(201, 151, 56, 0.12);
+    --gold-border:  rgba(201, 151, 56, 0.38);
+    --gold-subtle:  rgba(201, 151, 56, 0.18);
+    --ivory:        #FBF6EE;
+    --ivory-card:   #FCF8F2;
+    --cream:        #EFE6D2;
+    --cream-deep:   #E4D7BA;
+    --text-main:    #2A1810;
+    --text-muted:   #7A6A5E;
+    --rose:         #9B4057;
+    --shadow:       0 20px 60px rgba(47, 9, 16, 0.18);
+    --shadow-card:  0 12px 36px rgba(47, 9, 16, 0.12);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background:
+      radial-gradient(1200px 700px at 50% -10%, rgba(201, 151, 56, 0.12), transparent 60%),
+      linear-gradient(180deg, #EFE6D2 0%, #E8DCBF 50%, #DFD0B0 100%);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+
+  /* Fixed Desktop Framing for Mobile Simulation */
+  .app-frame {
+    max-width: 520px;
+    margin: 0 auto;
+    min-height: 100vh;
+    min-height: 100dvh;
+    position: relative;
+    background:
+      radial-gradient(800px 500px at 50% 0%, rgba(201, 151, 56, 0.08), transparent 70%),
+      #EFE6D2;
+    box-shadow: 0 0 50px rgba(47, 9, 16, 0.15);
+  }
+
+  /* ══════════════════════════════════════════════════════
+     PAGE 1: CINEMATIC SPLASH / HERO SCREEN (100vh full bleed)
+     ══════════════════════════════════════════════════════ */
+  #page1 {
+    position: fixed;
+    inset: 0;
+    max-width: 520px;
+    margin: 0 auto;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 100;
+    overflow: hidden;
+    background-color: var(--maroon-deep);
+    transition: transform 0.65s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.5s ease-in-out;
+  }
+
+  #page1.leaving {
+    transform: translateY(-40px) scale(0.98);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .hero-img-wrap {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    transform: scale(1.02);
+    animation: heroZoom 14s ease-out infinite alternate;
+  }
+
+  @keyframes heroZoom {
+    0%   { transform: scale(1.02); }
+    100% { transform: scale(1.08); }
+  }
+
+  /* Royal Gradient & Vignette Overlay */
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(47, 9, 16, 0.35) 0%,
+      rgba(47, 9, 16, 0.15) 25%,
+      rgba(47, 9, 16, 0.6) 55%,
+      rgba(47, 9, 16, 0.92) 82%,
+      #2F0910 100%
+    );
+  }
+
+  /* Top Garland & Hanging Bells Motif */
+  .hero-top-decor {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none;
+    z-index: 2;
+    padding: 0 16px;
+  }
+
+  .hero-garland-svg {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    color: var(--gold-light);
+    opacity: 0.9;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
+  }
+
+  .bells-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 26px;
+    margin-top: -6px;
+  }
+
+  .hanging-bell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--gold-light);
+    animation: bellSway 3.6s ease-in-out infinite alternate;
+    transform-origin: top center;
+  }
+  .hanging-bell.right {
+    animation-delay: 1.8s;
+  }
+
+  @keyframes bellSway {
+    0%   { transform: rotate(-3.5deg); }
+    100% { transform: rotate(3.5deg); }
+  }
+
+  /* Hero Bottom Typography & CTA */
+  .hero-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px 20px calc(28px + env(safe-area-inset-bottom, 16px));
+    text-align: center;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 3.5px;
+    color: var(--gold-light);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    opacity: 0;
+    transform: translateY(14px);
+    animation: heroFadeUp 0.8s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .hero-names-script {
+    font-family: 'Alex Brush', cursive;
+    font-size: clamp(48px, 12vw, 68px);
+    line-height: 1.05;
+    color: var(--ivory);
+    margin-bottom: 8px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transform: translateY(18px);
+    animation: heroFadeUp 0.8s 0.4s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .hero-occasion {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 2.8px;
+    color: var(--gold-light);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(14px);
+    animation: heroFadeUp 0.8s 0.6s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .hero-date {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: rgba(251, 246, 238, 0.85);
+    margin-bottom: 22px;
+    opacity: 0;
+    transform: translateY(14px);
+    animation: heroFadeUp 0.8s 0.7s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  /* Pill-shaped Open Invitation CTA Button */
+  .btn-open-invite {
+    background: linear-gradient(135deg, var(--maroon-light) 0%, var(--maroon-deep) 100%);
+    border: 1.5px solid var(--gold);
+    border-radius: 50px;
+    color: var(--ivory);
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 15px 36px;
+    min-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(47, 9, 16, 0.5), 0 0 0 4px rgba(201, 151, 56, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    opacity: 0;
+    transform: translateY(16px);
+    animation: heroFadeUp 0.8s 0.85s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .btn-open-invite:hover, .btn-open-invite:active {
+    background: linear-gradient(135deg, var(--maroon-hover) 0%, var(--maroon-light) 100%);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(47, 9, 16, 0.65), 0 0 0 5px rgba(201, 151, 56, 0.35);
+  }
+
+  .btn-open-invite svg {
+    width: 14px;
+    height: 14px;
+    fill: var(--gold-light);
+  }
+
+  @keyframes heroFadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* ══════════════════════════════════════════════════════
+     PAGE 2: FULL INVITATION DETAILS (Attached HTML Style)
+     ══════════════════════════════════════════════════════ */
+  #page2 {
+    display: none;
+    opacity: 0;
+    padding: 24px 16px calc(64px + env(safe-area-inset-bottom, 20px));
+    position: relative;
+    transition: opacity 0.5s ease-in-out, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transform: translateY(30px);
+  }
+
+  #page2.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Floating Controls (Back to Cover & Sound Toggle) */
+  .fixed-nav {
+    position: fixed;
+    top: 14px;
+    left: 0;
+    right: 0;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 0 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 90;
+    pointer-events: none;
+  }
+
+  .nav-btn {
+    pointer-events: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(251, 246, 238, 0.9);
+    border: 1.5px solid var(--gold);
+    color: var(--maroon);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(47, 9, 16, 0.2);
+    backdrop-filter: blur(8px);
+    transition: all 0.25s ease;
+  }
+
+  .nav-btn:active {
+    transform: scale(0.92);
+    background: var(--maroon);
+    color: var(--ivory);
+  }
+
+  .nav-btn svg {
+    width: 17px;
+    height: 17px;
+    fill: currentColor;
+  }
+
+  /* ── ORNAMENTAL DIVIDERS ── */
+  .rule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .rule::before, .rule::after {
+    content: '';
+    flex: 1;
+    max-width: 64px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .rule svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    fill: var(--gold);
+  }
+
+  /* ── ROYAL ARCH INVITATION CARD (Exact Attached Style) ── */
+  .invite {
+    background:
+      radial-gradient(600px 300px at 50% 0%, rgba(201, 151, 56, 0.08), transparent 65%),
+      var(--ivory);
+    border: 1px solid var(--gold-border);
+    border-radius: 6px 6px 160px 160px / 6px 6px 90px 90px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+    padding: 50px 28px 42px;
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  .invite::before {
+    content: '';
+    position: absolute;
+    inset: 12px;
+    border: 1px solid var(--gold-border);
+    border-radius: 4px 4px 148px 148px / 4px 4px 82px 82px;
+    pointer-events: none;
+  }
+
+  .crest-flourish {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+  }
+  .crest-flourish svg {
+    width: 120px;
+    height: auto;
+    color: var(--gold);
+  }
+
+  .names-script {
+    font-family: 'Alex Brush', cursive;
+    font-size: clamp(40px, 9.5vw, 56px);
+    text-align: center;
+    color: var(--maroon);
+    line-height: 1.05;
+    margin: 8px 0 6px;
+  }
+
+  .lineage {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 4px;
+  }
+  .lineage strong {
+    color: var(--text-main);
+    font-weight: 600;
+  }
+
+  .occasion-title {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--maroon);
+    font-size: clamp(22px, 5.5vw, 28px);
+    margin-top: 14px;
+    line-height: 1.25;
+  }
+
+  .tagline {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--text-muted);
+    margin-top: 6px;
+  }
+
+  .salutation-block {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .salutation-block .salute-line {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    line-height: 1.9;
+  }
+  .guest-line {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--maroon);
+    margin-top: 6px;
+  }
+  .dotted-underline {
+    width: 78%;
+    max-width: 320px;
+    margin: 12px auto 0;
+    border-bottom: 1.5px dotted var(--gold);
+  }
+
+  /* ── Info Rows (Calendar, Venue, Reception) ── */
+  .info-rows {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+  }
+
+  .info-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .info-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--maroon);
+    color: var(--gold-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 3px 10px rgba(74, 18, 26, 0.25);
+  }
+  .info-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .info-text .info-main {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--text-main);
+    line-height: 1.25;
+  }
+  .info-text .info-sub {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+  .info-text a {
+    color: var(--maroon);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold-border);
+    transition: color 0.2s;
+  }
+  .info-text a:hover {
+    color: var(--gold);
+  }
+
+  .rsvp-line {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .rsvp-line .phones {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--maroon);
+    margin-top: 4px;
+  }
+  .rsvp-line .phones a {
+    color: var(--maroon);
+    text-decoration: none;
+    margin: 0 4px;
+  }
+
+  /* Monogram Seal */
+  .seal {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  .seal-circle {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, var(--maroon-light), var(--maroon-deep));
+    border: 2px solid var(--gold);
+    color: var(--gold-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Alex Brush', cursive;
+    font-size: 24px;
+    box-shadow: 0 4px 14px rgba(74, 18, 26, 0.35);
+  }
+
+  /* ── SECTION SHELL ── */
+  .section {
+    margin-top: 36px;
+  }
+  .section-head {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .section-head .eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+  .section-head h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--maroon);
+    margin-top: 3px;
+  }
+
+  /* ── LIVE COUNTDOWN (100% BULLETPROOF) ── */
+  .countdown-strip {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+  }
+  .cd-cell {
+    background: var(--ivory);
+    border: 1px solid var(--gold-border);
+    border-radius: 12px;
+    padding: 12px 14px;
+    min-width: 68px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(74, 18, 26, 0.06);
+  }
+  .cd-cell .num {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--maroon);
+    line-height: 1.1;
+  }
+  .cd-cell .lbl {
+    font-size: 9.5px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 4px;
+  }
+
+  /* ── WELCOME & WISH MESSAGE SECTION ── */
+  .welcome-card {
+    background: var(--ivory);
+    border: 1px solid var(--gold-border);
+    border-radius: 16px;
+    padding: 32px 24px;
+    box-shadow: var(--shadow-card);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .welcome-salutation {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--maroon);
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+  .welcome-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #4a3832;
+    font-style: italic;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+  .welcome-signoff {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 14px;
+  }
+  .welcome-couple-names {
+    font-family: 'Alex Brush', cursive;
+    font-size: 32px;
+    color: var(--maroon);
+    margin-top: 4px;
+  }
+
+  /* Guest Wish Book */
+  .guest-wish-box {
+    margin-top: 26px;
+    padding-top: 22px;
+    border-top: 1px dashed var(--gold-border);
+    text-align: center;
+  }
+  .wish-box-title {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 1.8px;
+    color: var(--maroon);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .wish-box-sub {
+    font-size: 12.5px;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+  }
+  .quick-wishes-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+  .wish-chip {
+    background: rgba(201, 151, 56, 0.12);
+    border: 1px solid var(--gold-border);
+    border-radius: 50px;
+    padding: 5px 12px;
+    font-size: 11.5px;
+    color: var(--maroon);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .wish-chip:hover, .wish-chip:active {
+    background: var(--maroon);
+    color: var(--ivory);
+    border-color: var(--maroon);
+  }
+  .wish-input, .wish-textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid var(--gold-border);
+    border-radius: 10px;
+    padding: 10px 14px;
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13.5px;
+    outline: none;
+    margin-bottom: 10px;
+  }
+  .wish-input:focus, .wish-textarea:focus {
+    border-color: var(--gold);
+    background: #fff;
+  }
+  .btn-send-wish {
+    background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-light) 100%);
+    border: 1.5px solid var(--gold);
+    border-radius: 50px;
+    color: var(--ivory);
+    font-family: 'Cinzel', serif;
+    font-size: 10.5px;
+    letter-spacing: 2px;
+    padding: 12px 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(74, 18, 26, 0.25);
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-send-wish:hover, .btn-send-wish:active {
+    transform: translateY(-1px);
+    background: var(--maroon-hover);
+  }
+  .wish-sent-alert {
+    display: none;
+    margin-top: 14px;
+    padding: 12px;
+    background: rgba(61, 139, 94, 0.12);
+    border: 1px solid #3d8b5e;
+    border-radius: 10px;
+    color: #276340;
+    font-size: 13px;
+    animation: fadeIn 0.3s ease;
+  }
+  .btn-wa-wish {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #25D366;
+    color: white;
+    border-radius: 50px;
+    padding: 8px 18px;
+    font-family: 'Cinzel', serif;
+    font-size: 9.5px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+
+  /* ── IN-WINDOW GUEST PHOTO UPLOAD (NO REDIRECT!) ── */
+  .photo-drop-card {
+    background: var(--ivory);
+    border: 1px solid var(--gold-border);
+    border-radius: 16px;
+    padding: 30px 22px;
+    box-shadow: var(--shadow-card);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .photo-drop-icon {
+    font-size: 38px;
+    margin-bottom: 8px;
+  }
+  .photo-drop-title {
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--maroon);
+    margin-bottom: 6px;
+  }
+  .photo-drop-desc {
+    font-size: 13.5px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: 420px;
+    margin: 0 auto 18px;
+  }
+
+  /* Upload Area */
+  .guest-upload-zone {
+    border: 2px dashed var(--gold);
+    background: rgba(201, 151, 56, 0.06);
+    border-radius: 14px;
+    padding: 22px 14px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    margin-bottom: 14px;
+  }
+  .guest-upload-zone:hover {
+    background: rgba(201, 151, 56, 0.12);
+    border-color: var(--maroon);
+  }
+  .upload-icon-circle {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--maroon);
+    color: var(--gold-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+  }
+  .upload-icon-circle svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+  .upload-zone-main {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--maroon);
+    font-weight: 600;
+  }
+  .upload-zone-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 3px;
+  }
+
+  /* Guest Upload Form Inputs */
+  .upload-fields-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .upload-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid var(--gold-border);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 13.5px;
+    color: var(--text-main);
+    outline: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  .upload-input:focus {
+    border-color: var(--gold);
+    background: #fff;
+  }
+
+  /* Live Thumbnail Previews */
+  .guest-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .guest-prev-thumb {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    border: 1px solid var(--gold-border);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  .guest-prev-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .prev-remove-btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: rgba(74, 18, 26, 0.85);
+    color: #fff;
+    border: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* In-Window Upload Button (No Redirect!) */
+  .btn-submit-photo {
+    background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-deep) 100%);
+    border: 1.5px solid var(--gold);
+    color: var(--gold-light);
+    border-radius: 50px;
+    padding: 14px 28px;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 16px rgba(47, 9, 16, 0.35);
+    transition: all 0.2s ease;
+  }
+  .btn-submit-photo:hover, .btn-submit-photo:active {
+    background: var(--maroon-hover);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+
+  /* Upload Progress Bar */
+  .upload-progress-wrap {
+    display: none;
+    margin: 14px auto 6px;
+    max-width: 340px;
+    text-align: center;
+  }
+  .upload-progress-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(201, 151, 56, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 6px;
+  }
+  .upload-progress-fill {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--maroon), var(--gold));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+  .upload-status-text {
+    font-size: 12px;
+    color: var(--maroon);
+    font-weight: 600;
+  }
+
+  /* Upload Success Alert Box */
+  .upload-success-box {
+    display: none;
+    margin-top: 14px;
+    padding: 14px 16px;
+    background: rgba(61, 139, 94, 0.12);
+    border: 1px solid #3d8b5e;
+    border-radius: 12px;
+    color: #205c38;
+    animation: fadeIn 0.4s ease;
+  }
+  .upload-success-title {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .upload-success-sub {
+    font-size: 12.5px;
+    line-height: 1.5;
+  }
+
+  /* Live Homecoming Guest Moments Wall */
+  .guest-moments-wall {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px dashed var(--gold-border);
+    text-align: left;
+  }
+  .guest-wall-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .guest-wall-title {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--maroon);
+    font-weight: 600;
+  }
+  .guest-wall-badge {
+    font-size: 11px;
+    background: rgba(201, 151, 56, 0.15);
+    color: var(--maroon);
+    padding: 3px 10px;
+    border-radius: 50px;
+    font-weight: 600;
+  }
+  .guest-wall-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .guest-wall-item {
+    background: #fff;
+    border: 1px solid var(--gold-border);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(47, 9, 16, 0.08);
+    cursor: pointer;
+  }
+  .guest-wall-item img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+  }
+  .guest-wall-item:hover img {
+    transform: scale(1.05);
+  }
+  .guest-wall-meta {
+    padding: 8px 10px;
+    font-size: 11.5px;
+    color: var(--text-muted);
+  }
+  .guest-wall-author {
+    font-weight: 600;
+    color: var(--maroon);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .guest-wall-caption {
+    font-size: 10.5px;
+    color: #635049;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* ── INTERACTIVE RSVP BOX ── */
+  .rsvp-box {
+    background: var(--ivory);
+    border: 1px solid var(--gold-border);
+    border-radius: 16px;
+    padding: 26px 20px;
+    box-shadow: var(--shadow-card);
+    text-align: center;
+  }
+  .rsvp-badge {
+    display: inline-block;
+    background: rgba(155, 64, 87, 0.12);
+    border: 1px solid rgba(155, 64, 87, 0.35);
+    color: var(--maroon);
+    font-family: 'Cinzel', serif;
+    font-size: 9.5px;
+    letter-spacing: 1.5px;
+    padding: 4px 14px;
+    border-radius: 50px;
+    margin-bottom: 12px;
+  }
+  .guest-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 14px 0 18px;
+  }
+  .btn-counter {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1.5px solid var(--gold);
+    color: var(--maroon);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-counter:active {
+    background: var(--gold);
+    color: var(--maroon-deep);
+    transform: scale(0.92);
+  }
+  .counter-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--maroon);
+    min-width: 40px;
+  }
+  .rsvp-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid var(--gold-border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .rsvp-input:focus {
+    border-color: var(--gold);
+    background: #fff;
+  }
+  .rsvp-btn-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .btn-rsvp-yes {
+    background: var(--maroon);
+    border: 1.5px solid var(--gold);
+    border-radius: 50px;
+    color: var(--ivory);
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    padding: 12px 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-rsvp-yes:hover, .btn-rsvp-yes:active {
+    background: var(--maroon-hover);
+    transform: translateY(-1px);
+  }
+  .btn-rsvp-no {
+    background: transparent;
+    border: 1.5px solid rgba(74, 18, 26, 0.35);
+    border-radius: 50px;
+    color: var(--text-muted);
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    padding: 12px 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-rsvp-no:hover, .btn-rsvp-no:active {
+    border-color: var(--maroon);
+    color: var(--maroon);
+  }
+  .rsvp-response-box {
+    display: none;
+    padding: 14px 4px;
+    animation: fadeIn 0.4s ease;
+  }
+  .btn-wa-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #25D366;
+    color: white;
+    border-radius: 50px;
+    padding: 12px 22px;
+    font-family: 'Cinzel', serif;
+    font-size: 9.5px;
+    letter-spacing: 1.8px;
+    text-decoration: none;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  }
+
+  /* ── PHOTO GALLERY: ALL 5 REAL PHOTOS ── */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px 140px 140px;
+    gap: 12px;
+  }
+  .gallery-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(47, 9, 16, 0.12);
+    border: 1px solid var(--gold-border);
+    cursor: pointer;
+    background: var(--ivory);
+  }
+  .gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+  .gallery-card:hover img, .gallery-card:active img {
+    transform: scale(1.06);
+  }
+  .g-featured {
+    grid-column: 1 / -1;
+    height: 220px;
+  }
+  .gallery-card-hint {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(47, 9, 16, 0.6) 0%, transparent 60%);
+    opacity: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 8px;
+    transition: opacity 0.25s;
+  }
+  .gallery-card:hover .gallery-card-hint {
+    opacity: 1;
+  }
+  .gallery-card-hint svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--gold-light);
+  }
+
+  /* ── FULLSCREEN LIGHTBOX MODAL ── */
+  .lightbox-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 4, 8, 0.94);
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    backdrop-filter: blur(8px);
+  }
+  .lightbox-modal.show {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+  }
+  .lightbox-img {
+    max-width: 96%;
+    max-height: 82vh;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 1.5px solid var(--gold);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.85);
+  }
+  .lightbox-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(201, 151, 56, 0.2);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  /* ── FLOATING MUSIC PLAYER ── */
+  .music-player {
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--maroon-deep);
+    border: 1.5px solid var(--gold);
+    color: var(--gold-light);
+    border-radius: 50px;
+    padding: 6px 16px 6px 6px;
+    box-shadow: 0 10px 30px rgba(47, 9, 16, 0.45);
+    z-index: 200;
+    max-width: 300px;
+  }
+  .music-player .art {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--gold);
+    flex-shrink: 0;
+  }
+  .music-player .art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .music-player .art.spinning img {
+    animation: spinDisc 8s linear infinite;
+  }
+  @keyframes spinDisc {
+    100% { transform: rotate(360deg); }
+  }
+  .music-player .meta {
+    line-height: 1.25;
+    overflow: hidden;
+    text-align: left;
+    flex: 1;
+  }
+  .music-player .meta .t {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--ivory);
+  }
+  .music-player .meta .a {
+    font-size: 11px;
+    color: rgba(231, 201, 126, 0.8);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .music-player button {
+    background: var(--gold);
+    color: var(--maroon-deep);
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  .music-player button:active {
+    transform: scale(0.9);
+  }
+  .music-player button svg {
+    width: 12px;
+    height: 12px;
+    fill: currentColor;
+  }
+
+  /* ── FOOTER ── */
+  footer.foot-note {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+  }
+  footer.foot-note .fname {
+    font-family: 'Alex Brush', cursive;
+    font-size: 28px;
+    color: var(--maroon);
+    letter-spacing: 0;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+
+  @media (max-width: 480px) {
+    .invite { padding: 44px 18px 36px; }
+    .names-script { font-size: 44px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="app-frame">
+
+  <!-- ══════════════════════════════════════════════════════
+       PAGE 1: CINEMATIC SPLASH SCREEN (100vh)
+       ══════════════════════════════════════════════════════ -->
+  <section id="page1">
+    <div class="hero-img-wrap">
+      <!-- Real photo of Lakshan & Dilhani embracing under the arch in maroon -->
+      <img id="heroImageEl" class="hero-img" src="photos/couple-hero.jpg" alt="Lakshan &amp; Dilhani" onerror="this.src='photos/couple-arch-embrace.jpg'">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <!-- Top Hanging Bells & Garland SVG Motif -->
+    <div class="hero-top-decor">
+      <svg class="hero-garland-svg" viewBox="0 0 320 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 25 C 70 8, 120 40, 160 15 C 200 40, 250 8, 310 25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+        <circle cx="160" cy="15" r="3.5" fill="currentColor"/>
+        <path d="M160 18 L160 30" stroke="currentColor" stroke-width="1"/>
+        <circle cx="90" cy="22" r="2.5" fill="currentColor"/>
+        <circle cx="230" cy="22" r="2.5" fill="currentColor"/>
+      </svg>
+
+      <div class="bells-container">
+        <!-- Left hanging bell -->
+        <div class="hanging-bell">
+          <svg width="20" height="42" viewBox="0 0 20 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="10" y1="0" x2="10" y2="24" stroke="currentColor" stroke-width="1" stroke-dasharray="2 2"/>
+            <path d="M6 24 C 6 22, 14 22, 14 24 L 17 33 C 18 35, 2 35, 3 33 Z" fill="currentColor"/>
+            <circle cx="10" cy="36" r="2" fill="currentColor"/>
+          </svg>
+        </div>
+        <!-- Right hanging bell -->
+        <div class="hanging-bell right">
+          <svg width="20" height="42" viewBox="0 0 20 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="10" y1="0" x2="10" y2="24" stroke="currentColor" stroke-width="1" stroke-dasharray="2 2"/>
+            <path d="M6 24 C 6 22, 14 22, 14 24 L 17 33 C 18 35, 2 35, 3 33 Z" fill="currentColor"/>
+            <circle cx="10" cy="36" r="2" fill="currentColor"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Typography & CTA -->
+    <div class="hero-content">
+      <p class="hero-eyebrow">TOGETHER WITH THEIR FAMILIES</p>
+      
+      <h1 class="hero-names-script">
+        <span id="heroBride">Lakshan</span> &amp; <span id="heroGroom">Dilhani</span>
+      </h1>
+      
+      <div class="hero-occasion" id="heroOccasion">HOMECOMING CELEBRATION</div>
+      <div class="hero-date" id="heroDate">18th September 2026</div>
+
+      <button class="btn-open-invite" id="btnOpenInvite" aria-label="Open Wedding Invitation">
+        <svg viewBox="0 0 24 24"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/></svg>
+        <span>OPEN INVITATION</span>
+        <svg viewBox="0 0 24 24"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       PAGE 2: FULL INVITATION DETAILS (Attached HTML Style)
+       ══════════════════════════════════════════════════════ -->
+  <main id="page2">
+
+    <!-- Fixed Floating Controls -->
+    <header class="fixed-nav">
+      <button class="nav-btn" id="btnBackToHero" title="Return to cover" aria-label="Back to cover">
+        <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+      </button>
+      <button class="nav-btn" id="btnSoundFloat" title="Mute/Unmute Audio" aria-label="Toggle music">
+        <svg id="soundFloatIcon" viewBox="0 0 24 24"><path d="M12 3v9.28a4.39 4.39 0 0 0-1.5-.28 4.5 4.5 0 1 0 4.5 4.5V6h4V3h-7z"/></svg>
+      </button>
+    </header>
+
+    <!-- ═══ ROYAL INVITATION CARD (Exact Attached Style) ═══ -->
+    <section class="invite" id="inviteCard">
+      <!-- Crest Flourish SVG -->
+      <div class="crest-flourish" aria-hidden="true">
+        <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 40 Q 50 5 100 10 Q 150 5 190 40" stroke="currentColor" stroke-width="1.2"/>
+          <circle cx="100" cy="14" r="4" fill="currentColor"/>
+          <path d="M100 14 L100 26" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
+      </div>
+
+      <!-- Script Couple Names -->
+      <p class="names-script" id="p-names">Lakshan &amp; Dilhani</p>
+
+      <!-- Family Lineage -->
+      <p class="lineage">
+        Son of <strong id="p-groom-parents">Mr. and Mrs. Weerakkody</strong><br>
+        and<br>
+        Daughter of <strong id="p-bride-parents">Mr. and Mrs. Dissanayake</strong>
+      </p>
+
+      <!-- Heart / Gold Divider -->
+      <div class="rule" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.6-9C.8 8.6 2 5 5.5 5c2 0 3.3 1.1 4 2.2C10.2 6.1 11.5 5 13.5 5 17 5 18.2 8.6 21.6 12 19 16.5 12 21 12 21z"/></svg>
+      </div>
+
+      <!-- Occasion Title & Tagline -->
+      <h1 class="occasion-title" id="p-occasion">Homecoming Celebration</h1>
+      <p class="tagline" id="p-tagline">as they celebrate the beginning of their new journey together.</p>
+
+      <!-- Salutation -->
+      <div class="salutation-block">
+        <p class="salute-line" id="p-salutation">WARMLY REQUEST THE PLEASURE OF THE PRESENCE OF</p>
+        <p class="guest-line" id="p-guest-line">Mr. &amp; Mrs. / Miss. / Family,</p>
+      </div>
+      <div class="dotted-underline"></div>
+
+      <!-- 3 Info Rows with Maroon Icons -->
+      <div class="info-rows">
+        <!-- Date Row -->
+        <div class="info-row">
+          <div class="info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zm12 8H5v10h14V10z"/></svg>
+          </div>
+          <div class="info-text">
+            <div class="info-main" id="p-date">18th Sep 2026</div>
+            <div class="info-sub" id="p-time">6.30 PM onwards</div>
+          </div>
+        </div>
+
+        <!-- Venue Row (Clickable Google Maps link) -->
+        <div class="info-row">
+          <div class="info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+          </div>
+          <div class="info-text">
+            <div class="info-main">
+              <span id="p-hall">Emperors Court Hall, (4th Floor)</span>, <span id="p-hotel">Hotel Green Court</span>
+            </div>
+            <div class="info-sub">
+              <a id="p-map-link" href="https://maps.google.com/?q=Hotel+Green+Court+Homagama" target="_blank" rel="noopener noreferrer">
+                <span id="p-street">Galawila Road, Homagama</span> (Open in Maps)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reception Row -->
+        <div class="info-row">
+          <div class="info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 3h10a2 2 0 0 1 2 2v3a5 5 0 0 1-4.3 4.95c.4 1.6 1.6 2.9 3.3 3.3V18H6v-1.75c1.7-.4 2.9-1.7 3.3-3.3A5 5 0 0 1 5 8V5a2 2 0 0 1 2-2zm12 4v-1h1v1a3 3 0 0 1-3 3v-2a1 1 0 0 0 1-1zM5 6H4v1a1 1 0 0 0 1 1v2a3 3 0 0 1-3-3V6h3z"/></svg>
+          </div>
+          <div class="info-text">
+            <div class="info-main">Dinner &amp; Celebrations</div>
+            <div class="info-sub" id="p-evening-note">to Follow</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RSVP Line (Preserving User's 15th Sep Deadline) -->
+      <div class="rsvp-line">
+        RSVP by <strong id="p-rsvp-date">15th Sep 2026</strong>:
+        <div class="phones">
+          <a id="p-phone1" href="tel:0711314021">0711314021</a>,
+          <a id="p-phone2" href="tel:0716780238">0716780238</a>
+        </div>
+      </div>
+
+      <!-- Royal Wax Seal Monogram -->
+      <div class="seal">
+        <div class="seal-circle" id="p-monogram">L&amp;D</div>
+      </div>
+    </section>
+
+    <!-- ═══ LIVE COUNTDOWN (100% BULLETPROOF CALCULATION) ═══ -->
+    <section class="section" aria-label="Countdown to celebration">
+      <div class="section-head">
+        <p class="eyebrow">Anticipation</p>
+        <h2>Counting Down</h2>
+      </div>
+      <div class="countdown-strip" id="countdownStrip">
+        <div class="cd-cell"><div class="num" id="cd-days">00</div><div class="lbl">Days</div></div>
+        <div class="cd-cell"><div class="num" id="cd-hours">00</div><div class="lbl">Hours</div></div>
+        <div class="cd-cell"><div class="num" id="cd-mins">00</div><div class="lbl">Mins</div></div>
+        <div class="cd-cell"><div class="num" id="cd-secs">00</div><div class="lbl">Secs</div></div>
+      </div>
+    </section>
+
+    <!-- ═══ WELCOME & BLESSINGS MESSAGE SECTION (Replaces Timeline) ═══ -->
+    <section class="section" aria-label="Welcome and blessings">
+      <div class="section-head">
+        <p class="eyebrow">Warmest Welcome</p>
+        <h2>A Message of Gratitude</h2>
+      </div>
+
+      <div class="welcome-card">
+        <div class="welcome-flourish">
+          <svg viewBox="0 0 160 36" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:120px;margin:0 auto;">
+            <path d="M10 18 Q 80 2 150 18" stroke="var(--gold)" stroke-width="1.2"/>
+            <circle cx="80" cy="8" r="3" fill="var(--gold)"/>
+            <circle cx="45" cy="13" r="2" fill="var(--gold)"/>
+            <circle cx="115" cy="13" r="2" fill="var(--gold)"/>
+          </svg>
+        </div>
+
+        <p class="welcome-salutation">To Our Beloved Family &amp; Dear Friends,</p>
+
+        <p class="welcome-text">
+          As we step forward into this sacred and joyous chapter of our lives together, our hearts overflow with love and gratitude. You have blessed our journey with your encouragement, laughter, and affection.
+        </p>
+
+        <p class="welcome-text" style="margin-top:10px;">
+          Having you with us to celebrate our Homecoming means the world to us. May our evening together be filled with sweet memories, joyful celebrations, and cherished bonds that last a lifetime.
+        </p>
+
+        <div class="rule" style="margin:18px auto 12px;">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.6-9C.8 8.6 2 5 5.5 5c2 0 3.3 1.1 4 2.2C10.2 6.1 11.5 5 13.5 5 17 5 18.2 8.6 21.6 12 19 16.5 12 21 12 21z"/></svg>
+        </div>
+
+        <p class="welcome-signoff">With all our love and blessings,</p>
+        <p class="welcome-couple-names">Lakshan &amp; Dilhani</p>
+
+        <!-- Interactive Guest Wishes Box -->
+        <div class="guest-wish-box">
+          <h3 class="wish-box-title">💌 Send a Blessing or Wish to the Couple</h3>
+          <p class="wish-box-sub">Tap a blessing below or write your personal wish for Lakshan &amp; Dilhani</p>
+
+          <div class="quick-wishes-pills">
+            <span class="wish-chip" onclick="applyQuickWish('Wishing you both a lifetime of eternal love and boundless joy! ❤️')">❤️ Lifetime of Love</span>
+            <span class="wish-chip" onclick="applyQuickWish('May your journey together be blessed with happiness and prosperity! ✨')">✨ Endless Happiness</span>
+            <span class="wish-chip" onclick="applyQuickWish('Warmest congratulations to the wonderful couple! 🥂')">🥂 Congratulations</span>
+          </div>
+
+          <input type="text" id="wishSenderName" class="wish-input" placeholder="Your Name or Family Name..." autocomplete="name">
+          <textarea id="wishMessageText" class="wish-textarea" rows="3" placeholder="Write your heartfelt wish or blessing here..."></textarea>
+
+          <button class="btn-send-wish" id="btnSendWish">
+            <span>💝</span> SEND WISH VIA WHATSAPP
+          </button>
+
+          <div id="wishSentAlert" class="wish-sent-alert">
+            <span id="wishAlertText">✓ Your wish is ready to send!</span>
+            <br>
+            <a id="btnWishWhatsApp" class="btn-wa-wish" href="#" target="_blank" rel="noopener noreferrer">
+              <span>💬</span> OPEN WHATSAPP TO SEND
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ IN-WINDOW PHOTO UPLOAD (NO REDIRECT!) ═══ -->
+    <section class="section" aria-label="Capture and upload photos in window">
+      <div class="section-head">
+        <p class="eyebrow">Memories Shared</p>
+        <h2>Capture The Homecoming Night</h2>
+      </div>
+
+      <div class="photo-drop-card">
+        <div class="photo-drop-icon">📸</div>
+        <h3 class="photo-drop-title">Snap or Share Your Photos With Us</h3>
+        <p class="photo-drop-desc">
+          Capture beautiful moments during our Homecoming Celebration? Select your photos right here to add them to our wedding memories!
+        </p>
+
+        <!-- File Picker Trigger -->
+        <div class="guest-upload-zone" onclick="document.getElementById('guestPhotoInput').click()">
+          <div class="upload-icon-circle">
+            <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+          </div>
+          <p class="upload-zone-main">Tap here to choose photos from your phone</p>
+          <p class="upload-zone-sub">Camera or Photo Library · You can choose multiple photos</p>
+          <input type="file" id="guestPhotoInput" accept="image/*" multiple style="display:none;" onchange="handleGuestFileSelection(this)">
+        </div>
+
+        <!-- Inputs: Guest Name & Optional Memory Note -->
+        <div class="upload-fields-row">
+          <input type="text" id="guestUploaderName" class="upload-input" placeholder="Your Name (e.g. Aunt Chithra & Family)..." autocomplete="name">
+          <input type="text" id="guestPhotoCaption" class="upload-input" placeholder="Add a sweet memory caption (optional)...">
+        </div>
+
+        <!-- Live Thumbnail Previews of Selected Photos -->
+        <div id="guestPhotoPreviews" class="guest-preview-grid"></div>
+
+        <!-- In-Window Upload Button (No Redirect!) -->
+        <button class="btn-submit-photo" id="btnSubmitPhotos" onclick="uploadGuestPhotosInWindow()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16h6v-6h4l-7-7-7 7h4v6zm-4 2h14v2H5v-2z"/></svg>
+          <span>UPLOAD PHOTOS TO MEMORY WALL</span>
+        </button>
+
+        <!-- Animated Progress Bar -->
+        <div class="upload-progress-wrap" id="uploadProgressWrap">
+          <div class="upload-status-text" id="uploadStatusText">Uploading photo...</div>
+          <div class="upload-progress-bar">
+            <div class="upload-progress-fill" id="uploadProgressFill"></div>
+          </div>
+        </div>
+
+        <!-- Success Message -->
+        <div class="upload-success-box" id="uploadSuccessBox">
+          <div class="upload-success-title">🎉 Photo(s) Uploaded Successfully!</div>
+          <div class="upload-success-sub" id="uploadSuccessSub">
+            Thank you for sharing your precious moments with Lakshan &amp; Dilhani! Your photos now appear below.
+          </div>
+        </div>
+
+        <!-- Live Homecoming Guest Moments Wall -->
+        <div class="guest-moments-wall" id="guestMomentsWall">
+          <div class="guest-wall-header">
+            <span class="guest-wall-title">🌟 Guest Memories Wall</span>
+            <span class="guest-wall-badge" id="guestWallCountBadge">0 Memories</span>
+          </div>
+          <div class="guest-wall-grid" id="guestWallGrid">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ INTERACTIVE RSVP SECTION ═══ -->
+    <section class="section">
+      <div class="section-head">
+        <p class="eyebrow">Be Our Guest</p>
+        <h2>Will You Join Us?</h2>
+      </div>
+      <div class="rsvp-box">
+        <div class="rsvp-badge" id="rsvpBadgeEl">RSVP by 15th Sep 2026</div>
+
+        <div id="rsvpForm">
+          <p style="font-size:13.5px;color:var(--text-muted);">How many people, including you?</p>
+          
+          <div class="guest-counter">
+            <button class="btn-counter" id="btnMinus" aria-label="Decrease guests">−</button>
+            <span class="counter-num" id="guestCountVal">1</span>
+            <button class="btn-counter" id="btnPlus" aria-label="Increase guests">+</button>
+          </div>
+
+          <input type="text" id="guestNameInput" class="rsvp-input" placeholder="Your Name or Family Name..." autocomplete="name">
+
+          <div class="rsvp-btn-row">
+            <button class="btn-rsvp-yes" id="btnRsvpYes">RSVP YES →</button>
+            <button class="btn-rsvp-no" id="btnRsvpNo">CAN'T ATTEND</button>
+          </div>
+        </div>
+
+        <div id="rsvpResponse" class="rsvp-response-box">
+          <div style="font-size:36px;margin-bottom:6px;" id="rspIcon">🎉</div>
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--maroon);" id="rspTitle">See you there!</h3>
+          <p style="font-size:13px;color:var(--text-muted);margin-top:4px;" id="rspSub">We are so delighted to celebrate together.</p>
+          <a id="btnWhatsAppRsvp" class="btn-wa-action" href="#" target="_blank" rel="noopener noreferrer">
+            <span>💬</span> SEND CONFIRMATION VIA WHATSAPP
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PHOTO GALLERY (FEATURING ALL 5 REAL COUPLE PHOTOS) ═══ -->
+    <section class="section">
+      <div class="section-head">
+        <p class="eyebrow">Memories</p>
+        <h2>Moments of Love</h2>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- 1. Featured Large Arch Portrait -->
+        <div class="gallery-card g-featured" onclick="openLightbox('photos/couple-arch-embrace.jpg')">
+          <img src="photos/couple-arch-embrace.jpg" alt="Lakshan &amp; Dilhani Under Royal Arch" loading="lazy">
+          <div class="gallery-card-hint">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+        <!-- 2. Beach Lean Photo -->
+        <div class="gallery-card" onclick="openLightbox('photos/couple-beach-lean.jpg')">
+          <img src="photos/couple-beach-lean.jpg" alt="Lakshan &amp; Dilhani Beach Portrait" loading="lazy">
+          <div class="gallery-card-hint">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+        <!-- 3. Beach Bouquet Photo -->
+        <div class="gallery-card" onclick="openLightbox('photos/couple-beach-bouquet.jpg')">
+          <img src="photos/couple-beach-bouquet.jpg" alt="Lakshan &amp; Dilhani With Flowers" loading="lazy">
+          <div class="gallery-card-hint">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+        <!-- 4. Iron Fence Smile Photo -->
+        <div class="gallery-card" onclick="openLightbox('photos/couple-fence-smile.jpg')">
+          <img src="photos/couple-fence-smile.jpg" alt="Lakshan &amp; Dilhani Heritage Portrait" loading="lazy">
+          <div class="gallery-card-hint">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+        <!-- 5. Intimate Beach Close-Up -->
+        <div class="gallery-card" onclick="openLightbox('photos/couple-beach-close.jpg')">
+          <img src="photos/couple-beach-close.jpg" alt="Lakshan &amp; Dilhani Romantic Close Up" loading="lazy">
+          <div class="gallery-card-hint">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CLOSING FOOTER ═══ -->
+    <footer class="foot-note">
+      <span class="fname" id="p-footer-names">Lakshan &amp; Dilhani</span>
+      With love and gratitude for sharing our joy
+    </footer>
+
+    <!-- ═══ FLOATING MUSIC PLAYER ═══ -->
+    <div class="music-player" id="musicPlayer">
+      <div class="art" id="mpArtWrap">
+        <!-- Close up real photo of the couple on the rotating disc -->
+        <img id="mp-art" src="photos/music-art.jpg" alt="Music Disc" onerror="this.src='photos/couple-beach-close.jpg'">
+      </div>
+      <div class="meta">
+        <div class="t" id="mp-title">A Thousand Years (Instrumental)</div>
+        <div class="a" id="mp-artist">Lakshan &amp; Dilhani</div>
+      </div>
+      <button id="mp-toggle" aria-label="Play or pause music">
+        <svg id="mp-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+      <audio id="mp-audio" loop preload="auto"></audio>
+    </div>
+
+  </main>
+</div>
+
+<!-- Fullscreen Lightbox Modal -->
+<div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true">
+  <button class="lightbox-close-btn" id="btnLightboxClose" aria-label="Close image">✕</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="Full view couple photo">
+</div>
+
+<script>
+// ════════════════════════════════════════════════════════════
+// DATA LAYER: Wedding Content Specification Defaults
+// ════════════════════════════════════════════════════════════
+const CARD_DEFAULTS = {
+  groom: "Lakshan",
+  bride: "Dilhani",
+  groomParents: "Mr. and Mrs. Weerakkody",
+  brideParents: "Mr. and Mrs. Dissanayake",
+  salutation: "WARMLY REQUEST THE PLEASURE OF THE PRESENCE OF",
+  guestLine: "Mr. & Mrs. / Miss. / Family,",
+  occasionTitle: "Homecoming Celebration",
+  tagline: "as they celebrate the beginning of their new journey together.",
+  dateDisplay: "18th Sep 2026",
+  timeDisplay: "6.30 PM onwards",
+  eveningNote: "to Follow",
+  hallName: "Emperors Court Hall, (4th Floor)",
+  hotelName: "Hotel Green Court",
+  hotelStreet: "Galawila Road, Homagama",
+  mapUrl: "https://maps.google.com/?q=Hotel+Green+Court+Homagama",
+  gdriveUrl: "https://drive.google.com/drive/folders/15GX9B6-cSO_tIeR9WYX5mWABEftf5Qr_?usp=sharing",
+  rsvpDate: "15th Sep 2026",
+  rsvpPhone1: "0711314021",
+  rsvpPhone2: "0716780238",
+  songTitle: "A Thousand Years (Instrumental)",
+  songArtist: "Lakshan & Dilhani",
+  musicArtUrl: "photos/music-art.jpg",
+  heroImage: "photos/couple-hero.jpg",
+  audioSrc: "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-wedding-love-story-112194.mp3",
+  countdownTarget: "2026-09-18T18:30:00+05:30",
+  gallery: [
+    "photos/couple-arch-embrace.jpg",
+    "photos/couple-beach-lean.jpg",
+    "photos/couple-beach-bouquet.jpg",
+    "photos/couple-fence-smile.jpg",
+    "photos/couple-beach-close.jpg"
+  ]
+};
+
+function loadData() {
+  const saved = localStorage.getItem('weddingData');
+  if (saved) {
+    try { return { ...CARD_DEFAULTS, ...JSON.parse(saved) }; }
+    catch (e) { return { ...CARD_DEFAULTS }; }
+  }
+  return { ...CARD_DEFAULTS };
+}
+
+let weddingData = loadData();
+let currentGuestCount = 1;
+let isMusicPlaying = false;
+let selectedGuestFiles = [];
+
+function render() {
+  weddingData = loadData();
+  const d = weddingData;
+
+  // Hero
+  document.getElementById('heroBride').textContent = d.groom;
+  document.getElementById('heroGroom').textContent = d.bride;
+  document.getElementById('heroOccasion').textContent = (d.occasionTitle || "HOMECOMING CELEBRATION").toUpperCase();
+  document.getElementById('heroDate').textContent = d.dateDisplay || "18th September 2026";
+  if (d.heroImage) document.getElementById('heroImageEl').src = d.heroImage;
+
+  // Card Content
+  document.getElementById('p-names').innerHTML = `${d.groom} &amp; ${d.bride}`;
+  document.getElementById('p-footer-names').innerHTML = `${d.groom} &amp; ${d.bride}`;
+  document.getElementById('p-groom-parents').textContent = d.groomParents;
+  document.getElementById('p-bride-parents').textContent = d.brideParents;
+  document.getElementById('p-occasion').textContent = d.occasionTitle;
+  document.getElementById('p-tagline').textContent = d.tagline;
+  document.getElementById('p-salutation').textContent = d.salutation;
+  document.getElementById('p-guest-line').innerHTML = d.guestLine;
+  document.getElementById('p-date').textContent = d.dateDisplay;
+  document.getElementById('p-time').textContent = d.timeDisplay;
+  document.getElementById('p-hall').textContent = d.hallName;
+  document.getElementById('p-hotel').textContent = d.hotelName;
+  document.getElementById('p-street').textContent = d.hotelStreet;
+  document.getElementById('p-map-link').href = d.mapUrl;
+  document.getElementById('p-eveningNote').textContent = d.eveningNote || "to Follow";
+  document.getElementById('p-rsvp-date').textContent = d.rsvpDate;
+  if (document.getElementById('rsvpBadgeEl')) {
+    document.getElementById('rsvpBadgeEl').textContent = `RSVP by ${d.rsvpDate}`;
+  }
+  
+  const p1 = document.getElementById('p-phone1');
+  p1.textContent = d.rsvpPhone1;
+  p1.href = `tel:${d.rsvpPhone1}`;
+
+  const p2 = document.getElementById('p-phone2');
+  p2.textContent = d.rsvpPhone2;
+  p2.href = `tel:${d.rsvpPhone2}`;
+
+  const initialG = (d.groom || 'L').trim().charAt(0).toUpperCase();
+  const initialB = (d.bride || 'D').trim().charAt(0).toUpperCase();
+  document.getElementById('p-monogram').textContent = `${initialG}&${initialB}`;
+  document.title = `${d.groom} & ${d.bride} — ${d.occasionTitle}`;
+
+  // Music Player
+  document.getElementById('mp-title').textContent = d.songTitle || 'A Thousand Years';
+  document.getElementById('mp-artist').textContent = d.songArtist || `${d.groom} & ${d.bride}`;
+  if (d.musicArtUrl) document.getElementById('mp-art').src = d.musicArtUrl;
+  const audioEl = document.getElementById('mp-audio');
+  if (d.audioSrc && audioEl.src !== d.audioSrc) audioEl.src = d.audioSrc;
+
+  renderGuestMomentsWall();
+}
+
+// ── PAGE TRANSITIONS ──
+function openInvitation() {
+  const page1 = document.getElementById('page1');
+  const page2 = document.getElementById('page2');
+
+  page1.classList.add('leaving');
+
+  setTimeout(() => {
+    page1.style.display = 'none';
+    page2.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    startCountdown();
+  }, 500);
+
+  playAudio();
+}
+
+function returnToHero() {
+  const page1 = document.getElementById('page1');
+  const page2 = document.getElementById('page2');
+
+  page2.classList.remove('active');
+  page1.style.display = 'block';
+  void page1.offsetWidth;
+  page1.classList.remove('leaving');
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
+
+// ── MUSIC PLAYBACK ──
+const audioEl = document.getElementById('mp-audio');
+const mpToggle = document.getElementById('mp-toggle');
+const mpIcon = document.getElementById('mp-icon');
+const mpArtWrap = document.getElementById('mpArtWrap');
+const btnSoundFloat = document.getElementById('btnSoundFloat');
+
+function playAudio() {
+  if (!audioEl.src) return;
+  audioEl.play().then(() => {
+    isMusicPlaying = true;
+    updateMusicUI(true);
+  }).catch(() => {});
+}
+
+function toggleAudio() {
+  if (audioEl.paused) {
+    playAudio();
+  } else {
+    audioEl.pause();
+    isMusicPlaying = false;
+    updateMusicUI(false);
+  }
+}
+
+function updateMusicUI(playing) {
+  if (playing) {
+    mpIcon.innerHTML = '<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>';
+    mpArtWrap.classList.add('spinning');
+    btnSoundFloat.style.color = 'var(--gold)';
+  } else {
+    mpIcon.innerHTML = '<path d="M8 5v14l11-7z"/>';
+    mpArtWrap.classList.remove('spinning');
+    btnSoundFloat.style.color = 'var(--maroon)';
+  }
+}
+
+mpToggle.addEventListener('click', toggleAudio);
+btnSoundFloat.addEventListener('click', toggleAudio);
+
+// ── 100% BULLETPROOF COUNTDOWN TIMER (ZERO NaN ISSUES) ──
+function startCountdown() {
+  const elD = document.getElementById('cd-days');
+  const elH = document.getElementById('cd-hours');
+  const elM = document.getElementById('cd-mins');
+  const elS = document.getElementById('cd-secs');
+
+  if (!elD || !elH || !elM || !elS) return;
+
+  // Safe local date: 18th September 2026, 18:30:00 (6:30 PM local)
+  // Month 8 is September in 0-indexed JS Dates
+  const targetTimestamp = new Date(2026, 8, 18, 18, 30, 0).getTime();
+
+  function tick() {
+    const now = Date.now();
+    const diff = targetTimestamp - now;
+
+    if (diff <= 0) {
+      elD.textContent = '00';
+      elH.textContent = '00';
+      elM.textContent = '00';
+      elS.textContent = '00';
+      return;
+    }
+
+    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+    elD.textContent = String(d).padStart(2, '0');
+    elH.textContent = String(h).padStart(2, '0');
+    elM.textContent = String(m).padStart(2, '0');
+    elS.textContent = String(s).padStart(2, '0');
+  }
+
+  tick();
+  if (window.countdownTimerInterval) clearInterval(window.countdownTimerInterval);
+  window.countdownTimerInterval = setInterval(tick, 1000);
+}
+
+// ── WISH MESSAGE & BLESSINGS ──
+function applyQuickWish(text) {
+  const txtArea = document.getElementById('wishMessageText');
+  txtArea.value = text;
+  txtArea.focus();
+}
+
+document.getElementById('btnSendWish').addEventListener('click', () => {
+  const name = document.getElementById('wishSenderName').value.trim() || 'Well-wisher';
+  const msg = document.getElementById('wishMessageText').value.trim();
+
+  if (!msg) {
+    alert('Please write a short blessing or wish for Lakshan & Dilhani!');
+    return;
+  }
+
+  const phone = (weddingData.rsvpPhone1 || "0711314021").replace(/^0/, '94');
+  const encodedMsg = encodeURIComponent(`Dearest Lakshan & Dilhani,\n\n"${msg}"\n\nWith warmest blessings from,\n${name}`);
+  
+  const alertBox = document.getElementById('wishSentAlert');
+  const btnWaWish = document.getElementById('btnWishWhatsApp');
+  
+  btnWaWish.href = `https://wa.me/${phone}?text=${encodedMsg}`;
+  alertBox.style.display = 'block';
+  document.getElementById('wishAlertText').textContent = `✓ Blessing prepared from ${name}! Tap below to send on WhatsApp:`;
+
+  try {
+    const list = JSON.parse(localStorage.getItem('weddingWishes') || '[]');
+    list.push({ name: name, message: msg, date: new Date().toISOString() });
+    localStorage.setItem('weddingWishes', JSON.stringify(list));
+  } catch(e) {}
+});
+
+// ── IN-WINDOW GUEST PHOTO UPLOADER (NO REDIRECT!) ──
+function handleGuestFileSelection(input) {
+  const files = Array.from(input.files || []);
+  if (!files.length) return;
+
+  selectedGuestFiles = files;
+  renderSelectedPreviews();
+}
+
+function renderSelectedPreviews() {
+  const prevGrid = document.getElementById('guestPhotoPreviews');
+  prevGrid.innerHTML = '';
+
+  selectedGuestFiles.forEach((file, index) => {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const div = document.createElement('div');
+      div.className = 'guest-prev-thumb';
+      div.innerHTML = `
+        <img src="${e.target.result}" alt="Preview ${index + 1}">
+        <button class="prev-remove-btn" onclick="removeSelectedFile(${index})" title="Remove">✕</button>
+      `;
+      prevGrid.appendChild(div);
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+function removeSelectedFile(index) {
+  selectedGuestFiles.splice(index, 1);
+  renderSelectedPreviews();
+}
+
+// Compress image on canvas to keep upload lightweight & fast
+function compressImage(file, maxDim = 1200, quality = 0.85) {
+  return new Promise((resolve) => {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const img = new Image();
+      img.onload = () => {
+        let w = img.width;
+        let h = img.height;
+        if (w > maxDim || h > maxDim) {
+          if (w > h) {
+            h = Math.round((h * maxDim) / w);
+            w = maxDim;
+          } else {
+            w = Math.round((w * maxDim) / h);
+            h = maxDim;
+          }
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = w;
+        canvas.height = h;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, w, h);
+        resolve(canvas.toDataURL('image/jpeg', quality));
+      };
+      img.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+async function uploadGuestPhotosInWindow() {
+  if (!selectedGuestFiles.length) {
+    alert('Please tap the upload box above and select at least one photo first!');
+    return;
+  }
+
+  const uploaderName = document.getElementById('guestUploaderName').value.trim() || 'Guest';
+  const caption = document.getElementById('guestPhotoCaption').value.trim();
+
+  const progressWrap = document.getElementById('uploadProgressWrap');
+  const progressFill = document.getElementById('uploadProgressFill');
+  const progressText = document.getElementById('uploadStatusText');
+  const successBox = document.getElementById('uploadSuccessBox');
+  const successSub = document.getElementById('uploadSuccessSub');
+
+  progressWrap.style.display = 'block';
+  successBox.style.display = 'none';
+
+  let existing = [];
+  try {
+    existing = JSON.parse(localStorage.getItem('weddingGuestUploads') || '[]');
+  } catch(e) {}
+
+  for (let i = 0; i < selectedGuestFiles.length; i++) {
+    const file = selectedGuestFiles[i];
+    progressText.textContent = `Uploading photo ${i + 1} of ${selectedGuestFiles.length}...`;
+    const percent = Math.round(((i + 1) / selectedGuestFiles.length) * 100);
+    progressFill.style.width = `${percent}%`;
+
+    const compressedBase64 = await compressImage(file);
+    existing.unshift({
+      id: Date.now() + '_' + i,
+      author: uploaderName,
+      caption: caption,
+      dataUrl: compressedBase64,
+      date: new Date().toISOString()
+    });
+  }
+
+  // Keep latest 50 uploads in storage
+  const trimmed = existing.slice(0, 50);
+  try {
+    localStorage.setItem('weddingGuestUploads', JSON.stringify(trimmed));
+  } catch(e) {}
+
+  setTimeout(() => {
+    progressWrap.style.display = 'none';
+    successBox.style.display = 'block';
+    successSub.innerHTML = `Thank you <strong>${uploaderName}</strong>! Your ${selectedGuestFiles.length} photo(s) have been added to Lakshan &amp; Dilhani's Homecoming memory wall.`;
+
+    // Clear selection
+    selectedGuestFiles = [];
+    document.getElementById('guestPhotoPreviews').innerHTML = '';
+    document.getElementById('guestPhotoInput').value = '';
+    document.getElementById('guestPhotoCaption').value = '';
+
+    renderGuestMomentsWall();
+  }, 400);
+}
+
+function renderGuestMomentsWall() {
+  const wallGrid = document.getElementById('guestWallGrid');
+  const countBadge = document.getElementById('guestWallCountBadge');
+  if (!wallGrid) return;
+
+  let uploads = [];
+  try {
+    uploads = JSON.parse(localStorage.getItem('weddingGuestUploads') || '[]');
+  } catch(e) {}
+
+  countBadge.textContent = `${uploads.length} ${uploads.length === 1 ? 'Memory' : 'Memories'}`;
+
+  if (!uploads.length) {
+    wallGrid.innerHTML = `
+      <div style="grid-column:1/-1;text-align:center;padding:16px 8px;color:var(--text-muted);font-size:12.5px;">
+        No guest photos added yet. Be the first to snap and upload a memory above!
+      </div>
+    `;
+    return;
+  }
+
+  wallGrid.innerHTML = uploads.map(item => `
+    <div class="guest-wall-item" onclick="openLightbox('${item.dataUrl}')">
+      <img src="${item.dataUrl}" alt="Photo by ${item.author}" loading="lazy">
+      <div class="guest-wall-meta">
+        <div class="guest-wall-author">📸 ${item.author}</div>
+        ${item.caption ? `<div class="guest-wall-caption">"${item.caption}"</div>` : ''}
+      </div>
+    </div>
+  `).join('');
+}
+
+// ── INTERACTIVE RSVP ──
+const guestCountEl = document.getElementById('guestCountVal');
+document.getElementById('btnMinus').addEventListener('click', () => {
+  if (currentGuestCount > 1) {
+    currentGuestCount--;
+    guestCountEl.textContent = currentGuestCount;
+  }
+});
+document.getElementById('btnPlus').addEventListener('click', () => {
+  if (currentGuestCount < 10) {
+    currentGuestCount++;
+    guestCountEl.textContent = currentGuestCount;
+  }
+});
+
+function handleRsvp(attending) {
+  const nameInput = document.getElementById('guestNameInput');
+  const guestName = nameInput.value.trim() || "Valued Guest";
+  const rsvpForm = document.getElementById('rsvpForm');
+  const rsvpResponse = document.getElementById('rsvpResponse');
+  const rspIcon = document.getElementById('rspIcon');
+  const rspTitle = document.getElementById('rspTitle');
+  const rspSub = document.getElementById('rspSub');
+  const btnWhatsAppRsvp = document.getElementById('btnWhatsAppRsvp');
+
+  rsvpForm.style.display = 'none';
+  rsvpResponse.style.display = 'block';
+
+  const phone = (weddingData.rsvpPhone1 || "0711314021").replace(/^0/, '94');
+
+  if (attending) {
+    rspIcon.textContent = '🎉';
+    rspTitle.textContent = `See you there, ${guestName}!`;
+    rspSub.textContent = `We are delighted to celebrate together (${currentGuestCount} guest${currentGuestCount > 1 ? 's' : ''}).`;
+
+    const msg = encodeURIComponent(`Hi Lakshan & Dilhani, this is ${guestName}. I am delighted to RSVP YES for ${currentGuestCount} guest(s) for your Homecoming Celebration on 18th Sep 2026!`);
+    btnWhatsAppRsvp.href = `https://wa.me/${phone}?text=${msg}`;
+    btnWhatsAppRsvp.style.background = '#25D366';
+  } else {
+    rspIcon.textContent = '🙏';
+    rspTitle.textContent = `We'll miss you, ${guestName}!`;
+    rspSub.textContent = `Thank you so much for letting us know. Warmest wishes.`;
+
+    const msg = encodeURIComponent(`Hi Lakshan & Dilhani, this is ${guestName}. Thank you so much for the invitation. Unfortunately I won't be able to attend your Homecoming Celebration. Wishing you both a lifetime of happiness!`);
+    btnWhatsAppRsvp.href = `https://wa.me/${phone}?text=${msg}`;
+    btnWhatsAppRsvp.style.background = '#651F2D';
+  }
+
+  try {
+    const list = JSON.parse(localStorage.getItem('weddingRsvps') || '[]');
+    list.push({ name: guestName, count: attending ? currentGuestCount : 0, attending: attending, date: new Date().toISOString() });
+    localStorage.setItem('weddingRsvps', JSON.stringify(list));
+  } catch(e) {}
+}
+
+document.getElementById('btnRsvpYes').addEventListener('click', () => handleRsvp(true));
+document.getElementById('btnRsvpNo').addEventListener('click', () => handleRsvp(false));
+
+// ── LIGHTBOX OVERLAY ──
+const lightboxModal = document.getElementById('lightboxModal');
+const lightboxImg = document.getElementById('lightboxImg');
+
+function openLightbox(src) {
+  lightboxImg.src = src;
+  lightboxModal.classList.add('show');
+}
+function closeLightbox() {
+  lightboxModal.classList.remove('show');
+}
+document.getElementById('btnLightboxClose').addEventListener('click', closeLightbox);
+lightboxModal.addEventListener('click', (e) => {
+  if (e.target === lightboxModal) closeLightbox();
+});
+
+// ── LISTENERS ──
+document.getElementById('btnOpenInvite').addEventListener('click', openInvitation);
+document.getElementById('btnBackToHero').addEventListener('click', returnToHero);
+
+window.addEventListener('storage', (e) => {
+  if (e.key === 'weddingData') render();
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  render();
+  startCountdown();
+});
+</script>
+</body>
+</html>
