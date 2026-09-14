@@ -1659,7 +1659,7 @@
       <button id="mp-toggle" aria-label="Play or pause music">
         <svg id="mp-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
       </button>
-      <audio id="mp-audio" loop preload="auto"></audio>
+      <audio id="mp-audio" loop preload="auto" autoplay playsinline></audio>
     </div>
 
   </main>
@@ -2037,6 +2037,7 @@ window.addEventListener('storage', (e) => {
 window.addEventListener('DOMContentLoaded', () => {
   render();
   startCountdown();
+  playAudio();
 });
 </script>
 </body>
