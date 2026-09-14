@@ -1659,7 +1659,7 @@
       <button id="mp-toggle" aria-label="Play or pause music">
         <svg id="mp-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
       </button>
-      <audio id="mp-audio" loop preload="auto" autoplay playsinline></audio>
+      <audio id="mp-audio" src="audio/a%20thousand%20years%20-%20Christina%20Perri.mp3" loop preload="auto" autoplay playsinline></audio>
     </div>
 
   </main>
@@ -2038,6 +2038,13 @@ window.addEventListener('DOMContentLoaded', () => {
   render();
   startCountdown();
   playAudio();
+});
+
+// Browsers may block audible autoplay until the visitor interacts once.
+['click', 'touchstart', 'keydown'].forEach((eventName) => {
+  document.addEventListener(eventName, () => {
+    if (audioEl.paused) playAudio();
+  }, { once: true, passive: true });
 });
 </script>
 </body>
